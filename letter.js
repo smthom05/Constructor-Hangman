@@ -1,6 +1,7 @@
-var Letter = function(){
-
-
+// Creating our Letter Constructor function
+let Letter = function(letter) {
+  this.letter = letter;
+  this.isGuessed = false;
 }
 
-module.export = Letter;
+module.exports = Letter;
