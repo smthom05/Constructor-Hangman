@@ -42,7 +42,11 @@ function chooseWord() {
 
   console.log(newGame);
 
+  generateDisplay(newGame);
+}
 
+function generateDisplay(newGame) {
+  newGame.generateWordDisplay();
 }
 
 function playAgain() {

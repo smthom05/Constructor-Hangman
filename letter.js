@@ -4,4 +4,15 @@ let Letter = function(letter) {
   this.isGuessed = false;
 }
 
+Letter.prototype.display = function(){
+if(this.isGuessed){
+  return ' ' + this.letter.toUpperCase() + ' ';
+}
+else
+{
+  return '_';
+}
+};
+
+
 module.exports = Letter;
