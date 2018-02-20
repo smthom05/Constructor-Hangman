@@ -10,18 +10,18 @@ let Word = function(word) {
   this.lettersInWord = this.word.length;
 
   // Testing / Debugging
-  console.log(this.word);
-  console.log(this.letterArr);
-  console.log(this.lettersInWord);
+  // console.log(this.word);
+  // console.log(this.letterArr);
+  // console.log(this.lettersInWord);
 };
 
 Word.prototype.generateDisplay = function() {
-  console.log(this.letterArr);
-  // let that = this;
+  // console.log(this.letterArr);
+  let that = this;
   let letterArr = this.letterArr;
   let wordString = "";
   for (var i = 0; i < letterArr.length; i++) {
-    wordString += this.letterArr[i].display();
+    wordString += " " + that.letterArr[i].display();
   };
   console.log(wordString + "\n");
 };
@@ -31,6 +31,6 @@ module.exports = Word;
 
 
 
-let test = new Word("trve");
-test.generateDisplay();
-// test.renderWord();
+// let test = new Word("renegade");
+// test.generateDisplay();
+// // test.renderWord();
