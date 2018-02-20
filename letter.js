@@ -6,11 +6,11 @@ let Letter = function(letter) {
 
 Letter.prototype.display = function(){
 if(this.isGuessed){
-  return ' ' + this.letter.toUpperCase() + ' ';
+  return " " + this.letter.toUpperCase() + " ";
 }
 else
 {
-  return '_';
+  return "_";
 }
 };
 
